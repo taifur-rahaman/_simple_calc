@@ -134,8 +134,8 @@ def vol():
         print(f"The volume of the cylinder is {vol_cylinder:0.2f}")
     elif choice == 4:
         pi = 3.14159
-        radius = float(input("Enter the radius of the cylinder: "))
-        height = float(input("Enter the height of the cylinder: "))
+        radius = float(input("Enter the radius of the cone: "))
+        height = float(input("Enter the height of the cone: "))
         vol_cone = pi * (radius ** 2) * (height / 3)
         print(f"The volume of the cone is {vol_cone:0.2f}")
     elif choice == 5:

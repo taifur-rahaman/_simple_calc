@@ -1,4 +1,4 @@
-from functions import add, sub, mul, div, power, area
+from functions import add, sub, mul, div, power, area, vol
 
 print("Simple Console Calculator\n\n")
 
@@ -24,7 +24,7 @@ while choice != 0:
     elif choice == 6:
         area()
     elif choice == 7:
-        pass
+        vol()
 
     print("\n\n1. Addition\n2. Subtraction\n3. Multiply\n4. Divide\n5. Power\n6. Area\n7. Volume\n0. Quit")
     choice = int(input("Enter your choice: "))
