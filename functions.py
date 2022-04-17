@@ -105,3 +105,41 @@ def area():
         height = float("Enter the height of the Trapezoid: ")
         area_trapezoid = ((base_1 + base_2) / 2) * height
         print(f"Enter the area of the Trapezoid is {area_trapezoid:0.2f}")
+
+
+def vol():
+    print("\n1. Cube\n2. Rectangular Prism\n3. Cylinder\n4. Cone\n5. Sphere\n")
+    choice = int(input("Enter your choice : "))
+
+    while choice not in {1, 2, 3, 4, 5}:
+        print("\nInvalid Input\n")
+        print("\n1. Cube\n2. Rectangular Prism\n3. Cylinder\n4. Cone\n5. Sphere\n")
+        choice = int(input("Enter your choice : "))
+
+    if choice == 1:
+        radius = float(input("Enter the edge of the Cube: "))
+        vol_cube = radius ** 3
+        print(f"The volume of the cube is {vol_cube:0.2f}")
+    elif choice == 2:
+        length = float(input("Enter the length of the Prism: "))
+        width = float(input("Enter the width of the Prism: "))
+        height = float(input("Enter the height of the Prism: "))
+        vol_prism = length * width * height
+        print(f"The volume of the prism is {vol_prism:0.2f}")
+    elif choice == 3:
+        pi = 3.14159
+        radius = float(input("Enter the radius of the cylinder: "))
+        height = float(input("Enter the height of the cylinder: "))
+        vol_cylinder = pi * (radius ** 2) * height
+        print(f"The volume of the cylinder is {vol_cylinder:0.2f}")
+    elif choice == 4:
+        pi = 3.14159
+        radius = float(input("Enter the radius of the cylinder: "))
+        height = float(input("Enter the height of the cylinder: "))
+        vol_cone = pi * (radius ** 2) * (height / 3)
+        print(f"The volume of the cone is {vol_cone:0.2f}")
+    elif choice == 5:
+        pi = 3.14159
+        radius = float("Enter the radius of the Sphere: ")
+        vol_sphere = (4 / 3) * pi * (radius ** 3)
+        print(f"Enter the volume of the Sphere is {vol_sphere:0.2f}")
