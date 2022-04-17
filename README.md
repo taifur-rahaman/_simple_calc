@@ -1,5 +1,4 @@
 <h1 align="center">Simple Console Calculator</h1>
-<hr>
 A simple console calculator that has a functionality.
 
 ### Functionalities
